@@ -1,0 +1,14 @@
+.NavBar .MobileNavigation {
+  display: none;
+}
+
+@media (max-width: 660px) {
+  .NavBar .navigation {
+    display: none;
+  }
+
+  .NavBar .MobileNavigation {
+    display: flex;
+  }
+
+}

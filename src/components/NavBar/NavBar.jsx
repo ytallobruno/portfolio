@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React from "react";
+import MobileNavigation from "./MobileNavigation";
+import style from "./NavBar.module.css";
+import Navigation from "./Navigation";
 
-export default class NavBar extends Component {
-  render() {
-    return (
-      <>
-        <div>
-          
-        </div>
-      </>
-    )
-  }
+export default function NavBar(props) {
+  return (
+    <div className={style.NavBar}>
+      <Navigation />
+      <MobileNavigation />
+    </div>
+  );
 }
