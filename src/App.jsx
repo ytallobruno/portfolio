@@ -10,9 +10,9 @@ export default function App() {
     <>
       <NavBar />
       <div className="App">
-        <About/>
-        <Experience/>
-        <Portfolio/>
+        <About />
+        <Experience />
+        <Portfolio />
       </div>
     </>
   );
