@@ -2,17 +2,22 @@ import React from "react";
 import style from "./NavBar.module.css";
 import { useState } from "react";
 import { CgMenuRound, CgClose } from "react-icons/cg";
-import { Link } from "react-scroll";
 import NavLinks from "./NavLinks";
 
 export default function MobileNavigation() {
   const [open, setOpen] = useState(false);
 
   const hamburguerIcon = (
-    <CgMenuRound className="w-8 h-8 text-neutral-100 mx-auto cursor-pointer" onClick={() => setOpen(!open)} />
+    <CgMenuRound
+      className="w-8 h-8 text-neutral-100 mx-auto cursor-pointer"
+      onClick={() => setOpen(!open)}
+    />
   );
   const closeIcon = (
-    <CgClose className="w-8 h-8 text-neutral-100 mx-auto cursor-pointer" onClick={() => setOpen(!open)} />
+    <CgClose
+      className="w-8 h-8 text-neutral-100 mx-auto cursor-pointer"
+      onClick={() => setOpen(!open)}
+    />
   );
   const closeMobileMenu = () => setOpen(false);
 
