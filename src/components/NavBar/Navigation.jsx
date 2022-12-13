@@ -5,15 +5,19 @@ import style from "./NavBar.module.css";
 
 export default function Navigation() {
   return (
-    <div className={style.navigation}>
-      <nav className="flex items-center justify-between w-full h-10 px-4 bg-slate-500">
-        <div >
-          <Link to="/">
-            <p className="text-slate-100 hover:text-slate-400 cursor-pointer transition">Ytallo Bruno</p>
-          </Link>
-        </div>
-        <NavLinks />
-      </nav>
+    <div className="bg-black/5 backdrop-blur-sm">
+      <div className={style.navigation}>
+        <nav className="flex items-center justify-center w-full h-10 px-4 ">
+          {/* <div>
+            <Link to="/">
+              <p className="text-2xl font-bold text-slate-100 hover:text-slate-400 cursor-pointer transition">
+                Ytallo
+              </p>
+            </Link>
+          </div> */}
+          <NavLinks />
+        </nav>
+      </div>
     </div>
   );
 }

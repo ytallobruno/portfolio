@@ -1,14 +1,39 @@
+.NavBar {
+  position: fixed;
+  width: 100%;
+}
+
 .NavBar .MobileNavigation {
   display: none;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 600px) {
   .NavBar .navigation {
     display: none;
+  }
+
+  .NavBar {
+    position: fixed;
+    bottom: 0;
   }
 
   .NavBar .MobileNavigation {
     display: flex;
   }
 
+  .NavBar .MobileNavigation ul {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(4px);
+  }
+
+  .NavBar ul li {
+    padding: 0.4rem 0;
+  }
 }
