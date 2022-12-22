@@ -23,40 +23,57 @@ export default function About() {
 
   return (
     <>
-      <div id="about" className="h-screen bg-slate-900 pt-10">
-        <div className="text-center p-10">
-          <h2 className="text-5xl py-2 text-teal-200 font-bold">
-            {userData.name}
-          </h2>
-          <h3 className="text-2xl py-2 mr-24 text-gray-400">Dev Full Stack</h3>
-          <p className="text-md py-2 px-28 leading-8 text-gray-200">
-            {userData.bio}
-          </p>
-        </div>
-        <div className="text-5xl flex justify-center gap-6 text-gray-200">
+      <article
+        id="about"
+        className="h-screen bg-gradient-to-b from-black to-slate-900 pt-20 max-sm:pt-6"
+      >
+        <section className="flex-col items-center justify-center">
+          <div className="max-w-full">
+            <h2 className="py-2 text-center text-5xl font-bold text-teal-200">
+              {userData.name}
+            </h2>
+            <h3 className="py-1 text-center text-2xl text-gray-400">
+              Dev Full Stack
+            </h3>
+            <p className="mx-auto max-w-lg px-8 text-center text-base leading-7 text-gray-100 max-sm:px-4">
+              {userData.bio}
+            </p>
+          </div>
+
+          <div className="flex justify-center m-10 my-16 max-sm:my-10">
+            <img
+              src={userData.avatar_url}
+              alt="foto de perfil de Ytallo"
+              className="max-h-80 rounded-full"
+            />
+          </div>
+        </section>
+        <section className="flex justify-center gap-6 text-5xl text-gray-200">
           <a
             target={"_blank"}
             href="https://twitter.com/ytallodev"
-            className="hover:text-teal-200 transition ease-in-out"
+            className="transition ease-in-out hover:text-teal-200"
           >
             <AiFillTwitterCircle />
           </a>
+
           <a
             target={"_blank"}
             href="https://www.linkedin.com/in/ytallobruno/"
-            className="hover:text-teal-200 transition ease-in-out"
+            className="transition ease-in-out hover:text-teal-200"
           >
             <AiFillLinkedin />
           </a>
+
           <a
             target={"_blank"}
             href="https://github.com/ytallobruno/"
-            className="hover:text-teal-200 transition ease-in-out"
+            className="transition ease-in-out hover:text-teal-200"
           >
             <AiFillGithub />
           </a>
-        </div>
-      </div>
+        </section>
+      </article>
     </>
   );
 }
