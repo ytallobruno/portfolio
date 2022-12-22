@@ -7,7 +7,7 @@
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .NavBar .navigation {
     display: none;
   }
