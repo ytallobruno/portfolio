@@ -35,12 +35,12 @@ export default function About() {
             <h3 className="py-1 text-center text-2xl text-gray-400">
               Dev Full Stack
             </h3>
-            <p className="mx-auto max-w-lg px-8 text-center text-base leading-7 text-gray-100 max-sm:px-4">
+            <p className="mx-auto max-w-lg px-8 text-center text-base leading-7 text-neutral-100 max-sm:px-4">
               {userData.bio}
             </p>
           </div>
 
-          <div className="flex justify-center m-10 my-16 max-sm:my-10">
+          <div className="m-10 my-16 flex justify-center max-sm:my-10">
             <img
               src={userData.avatar_url}
               alt="foto de perfil de Ytallo"
@@ -48,7 +48,7 @@ export default function About() {
             />
           </div>
         </section>
-        <section className="flex justify-center gap-6 text-5xl text-gray-200">
+        <section className="flex justify-center gap-6 text-5xl text-white">
           <a
             target={"_blank"}
             href="https://twitter.com/ytallodev"
