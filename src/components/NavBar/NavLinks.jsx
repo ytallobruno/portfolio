@@ -8,7 +8,7 @@ export default function NavLinks(props) {
 
   return (
     <>
-      <ul className="flex justify-between">
+      <ul className="flex justify-between text-lg">
         <motion.li
           className="mx-2"
           initial={animateFrom}
@@ -63,7 +63,7 @@ export default function NavLinks(props) {
           </Link>
         </motion.li>
 
-        <motion.li
+        {/* <motion.li
           className="mx-2"
           initial={animateFrom}
           animate={animateTo}
@@ -79,7 +79,7 @@ export default function NavLinks(props) {
           >
             Contato
           </Link>
-        </motion.li>
+        </motion.li> */}
       </ul>
     </>
   );

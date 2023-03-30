@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 
 export default function NavBar() {
   return (
-    <div className={style.NavBar}>
+    <div className={style.navBar}>
       <Navigation />
       <MobileNavigation />
     </div>

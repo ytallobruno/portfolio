@@ -9,22 +9,22 @@ export default function MobileNavigation() {
 
   const hamburguerIcon = (
     <CgMenuRound
-      className="w-8 h-8 text-neutral-100 mx-auto cursor-pointer"
+      className="mx-auto h-8 w-8 cursor-pointer text-neutral-100"
       onClick={() => setOpen(!open)}
     />
   );
   const closeIcon = (
     <CgClose
-      className="w-8 h-8 text-neutral-100 mx-auto cursor-pointer"
+      className="mx-auto h-8 w-8 cursor-pointer text-neutral-100"
       onClick={() => setOpen(!open)}
     />
   );
   const closeMobileMenu = () => setOpen(false);
 
   return (
-    <div className="bg-neutral-900">
+    <div className="bg-black/5 backdrop-blur-sm">
       <div className={style.MobileNavigation}>
-        <nav className="flex items-center w-full h-11 px-4">
+        <nav className="flex h-11 w-full items-center px-4">
           {open ? closeIcon : hamburguerIcon}
           {open && (
             <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />

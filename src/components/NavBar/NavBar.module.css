@@ -1,29 +1,29 @@
-.NavBar {
+.navBar {
   position: fixed;
   width: 100%;
 }
 
-.NavBar .MobileNavigation {
+.navBar .MobileNavigation {
   display: none;
 }
 
 @media (max-width: 640px) {
-  .NavBar .navigation {
+  .navBar .navigation {
     display: none;
   }
 
-  .NavBar {
+  .navBar {
     position: fixed;
     bottom: 0;
   }
 
-  .NavBar .MobileNavigation {
+  .navBar .MobileNavigation {
     display: flex;
   }
 
-  .NavBar .MobileNavigation ul {
+  .navBar .MobileNavigation ul {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
     position: absolute;
     bottom: 100%;
@@ -33,7 +33,12 @@
     backdrop-filter: blur(4px);
   }
 
-  .NavBar ul li {
-    padding: 0.4rem 0;
+  .navBar ul li {
+    padding: 0.2rem 0;
+    margin: 0.4rem 0;
+  }
+
+  .navBar ul li:last-child {
+    margin-bottom: 1.2rem;
   }
 }
