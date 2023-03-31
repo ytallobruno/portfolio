@@ -22,7 +22,7 @@ export default function MobileNavigation() {
   const closeMobileMenu = () => setOpen(false);
 
   return (
-    <div className="bg-black/5 backdrop-blur-sm">
+    <div className="bg-black/90 backdrop-blur-sm">
       <div className={style.MobileNavigation}>
         <nav className="flex h-11 w-full items-center px-4">
           {open ? closeIcon : hamburguerIcon}

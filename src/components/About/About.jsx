@@ -25,7 +25,7 @@ export default function About() {
     <>
       <article
         id="about"
-        className="h-screen bg-gradient-to-b from-black to-slate-900 pt-20 max-sm:pt-6"
+        className="h-max bg-gradient-to-b from-black to-slate-800 pt-20 max-sm:pt-6"
       >
         <section className="flex-col items-center justify-center">
           <div className="max-w-full">
@@ -40,15 +40,15 @@ export default function About() {
             </p>
           </div>
 
-          <div className="m-10 my-16 flex justify-center max-sm:my-10">
+          <picture className="my-16 mx-auto flex w-fit scale-100 justify-center overflow-hidden rounded-full bg-cover bg-no-repeat">
             <img
               src={userData.avatar_url}
               alt="foto de perfil de Ytallo"
-              className="max-h-80 rounded-full"
+              className="max-h-80 rounded-full transition duration-300 ease-in-out hover:scale-110"
             />
-          </div>
+          </picture>
         </section>
-        <section className="flex justify-center gap-6 text-5xl text-white">
+        <section className="flex justify-center gap-6 py-10 text-5xl text-white">
           <a
             target={"_blank"}
             href="https://twitter.com/ytallodev"
