@@ -10,3 +10,59 @@
 .App {
   height: 100%;
 }
+:root {
+  --bg-color: #080808;          /* Fundo principal - preto */
+  --bg-primary: #1e293b;        /* Fundo de cards primários */
+  --bg-secondary: #0f172a;      /* Fundo de botões/elementos interativos */
+  --bg-tertiary: #1e293b;       /* Fundo de cards secundários */
+
+  --text-color: #f8fafc;        /* Texto principal - quase branco */
+  --text-secondary-color: #e2e8f0; /* Texto secundário */
+  --text-tertiary-color: #94a3b8;  /* Texto terciário/descrições */
+
+  --primary-color: #3b82f6;     /* Azul principal */
+  --secondary-color: #60a5fa;   /* Azul mais claro para contrastes */
+  --transparency-color: rgba(15, 23, 42, 0.7); /* Overlay com mais opacidade */
+
+  --button-primary-color: #3b82f6;
+  --button-primary-hover: #1d4ed8;
+  --button-secondary: #e2e8f0;
+  --button-secondary-hover: #c5c9d0;
+  --button-text-default: #1e293b;
+  --button-text-light: #f8fafc;
+
+}
+
+
+[data-theme="light"] {
+  --bg-color: #f0f2f5;          /* Fundo principal - branco azulado */
+  --bg-primary: #e5e7eb;        /* Fundo de cards primários */
+  --bg-secondary: #dbe2e8;      /* Fundo de botões/elementos interativos */
+  --bg-tertiary: #f1f5f9;       /* Fundo de cards secundários */
+
+  --text-color: #0f172a;        /* Texto principal - azul escuro */
+  --text-secondary-color: #1e293b; /* Texto secundário */
+  --text-tertiary-color: #334155;  /* Texto terciário/descrições */
+
+  --primary-color: #3b82f6;     /* Azul principal */
+  --secondary-color: #1d4ed8;   /* Azul mais escuro para contrastes */
+  --transparency-color: rgba(241, 245, 249, 0.8); /* Overlay mais suave */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.App {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+button.theme-toggle {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: 1px solid var(--secondary-color);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
