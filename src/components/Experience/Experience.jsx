@@ -1,6 +1,6 @@
 import React from "react";
 import ExperienceCard from "./ExperienceCard";
-import { getExperienceData } from "../../model/ExperienceData";
+import { getExperienceData } from "../../model/experienceData";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
@@ -14,7 +14,7 @@ export default function Experience() {
         className="h-max bg-gradient-to-b from-slate-800 to-slate-600"
       >
         <section className="pt-10 pb-10">
-          <h2 className="py-2 mx-6 pb-8 text-center text-5xl font-bold text-slate-100">
+          <h2 className="mx-6 py-2 pb-8 text-center text-5xl font-bold text-slate-100">
             Experiências profissionais & Estudos
           </h2>
 
