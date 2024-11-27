@@ -3,7 +3,9 @@ import "./App.css";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import NavBar from "./components/NavBar/NavBar";
-import Portfolio from "./components/Portfolio/Portfolio";
+import Projects from "./components/Projects/Projects";
+import Skills from "./components/Skills/Skills";
+import Contact from "./components/Contact/Contact";
 
 export default function App() {
   return (
@@ -12,7 +14,9 @@ export default function App() {
       <div className="App">
         <About />
         <Experience />
-        <Portfolio />
+        <Skills />
+        <Projects />
+        {/* <Contact /> */}
       </div>
     </>
   );

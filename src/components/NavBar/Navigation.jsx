@@ -1,13 +1,15 @@
 import React from "react";
 import NavLinks from "./NavLinks";
 import style from "./NavBar.module.css";
+import ThemeToggle from "./ThemeToggle.jsx";
 
 export default function Navigation() {
   return (
-    <div className="bg-black backdrop-blur-xl">
+    <div className="backdrop-blur-xl p-1">
       <div className={style.navigation}>
-        <nav className="flex items-center justify-center w-full h-10 px-4 ">
+        <nav className="flex h-10 w-full items-center justify-center px-4">
           <NavLinks />
+          <ThemeToggle />
         </nav>
       </div>
     </div>
