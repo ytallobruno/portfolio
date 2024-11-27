@@ -6,50 +6,49 @@ import { MdOutlineWorkOutline } from "react-icons/md";
 export default function ExperienceCard(props) {
   const { company, position, startDate, endDate, description, tech } = props;
 
-  const lightGrey = "#E5E5E5";
-  const lightTeal = "#99F6E4";
-  const darkBlue = "#0F1729";
-  const yellowColor = "#FFD700";
-  const textColor = "#F5F5F5";
-  const bgColor = "rgba(0,0,0,0.4)";
-
   return (
-    <>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentStyle={{
-          background: bgColor,
-          color: textColor,
-          boxShadow: `0px -3px ${lightGrey}, 3px 10px 15px rgba(0,0,0,0.4)`,
-        }}
-        contentArrowStyle={{ borderRight: `14px solid ${bgColor}` }}
-        iconStyle={{ background: darkBlue, color: lightGrey }}
-        icon={<MdOutlineWorkOutline />}
-        date={[startDate, " ~ ", endDate]}
-      >
-        <h3 className="mb-2 text-xl font-bold">{position}</h3>
-        <h4 className="vertical-timeline-element-subtitle text-gray-400">
-          {company}
-        </h4>
-        <ul className="text-neutral-100 ">
-          {description.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+    <VerticalTimelineElement
+      className="vertical-timeline-element--work"
+      contentStyle={{
+        background: "var(--bg-tertiary)",
+        color: "var(--text-color)",
+        boxShadow: `0px -3px var(--secondary-color), 3px 10px 15px rgba(0,0,0,0.2)`,
+      }}
+      contentArrowStyle={{ borderRight: `14px solid var(--bg-tertiary)` }}
+      iconStyle={{
+        background: "var(--bg-tertiary)",
+        color: "var(--secondary-color)",
+      }}
+      icon={<MdOutlineWorkOutline />}
+      date={[startDate, " ~ ", endDate]}
+    >
+      <h3 className="mb-2 text-xl font-bold text-[var(--text-color)]">
+        {position}
+      </h3>
+      <h4 className="vertical-timeline-element-subtitle text-[var(--text-tertiary-color)]">
+        {company}
+      </h4>
+      <ul className="text-[var(--text-secondary-color)]">
+        {description.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
 
-        <div className="grid grid-cols-4 gap-2 align-bottom max-lg:grid-cols-4 max-sm:grid-cols-2">
-          {tech.map((item, index) => (
-            <div key={index} className="mx-auto w-auto max-sm:w-max">
-              <p
-                key={index}
-                className="rounded-full bg-slate-200 px-3 py-1 text-slate-900 transition duration-300 ease-in-out hover:bg-slate-500 hover:text-slate-100"
-              >
-                {item}
-              </p>
-            </div>
-          ))}
-        </div>
-      </VerticalTimelineElement>
-    </>
+      <div className="grid grid-cols-4 gap-2 align-bottom max-lg:grid-cols-4 max-sm:grid-cols-2">
+        {tech.map((item, index) => (
+          <div
+            key={index}
+            className="mx-auto w-auto cursor-pointer max-sm:w-max"
+          >
+            <p
+              key={index}
+              className="rounded-md border border-[var(--transparency-color)] bg-[var(--bg-secondary)] px-3 py-1 text-[var(--text-secondary-color)] transition duration-300 ease-in-out hover:bg-[var(--bg-primary)] hover:text-[var(--text-color)]"
+            >
+              {item}
+            </p>
+          </div>
+        ))}
+      </div>
+    </VerticalTimelineElement>
   );
 }
