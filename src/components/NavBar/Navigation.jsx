@@ -5,7 +5,7 @@ import ThemeToggle from "./ThemeToggle.jsx";
 
 export default function Navigation() {
   return (
-    <div className="backdrop-blur-xl p-1">
+    <div className="backdrop-blur-md">
       <div className={style.navigation}>
         <nav className="flex h-10 w-full items-center justify-center px-4">
           <NavLinks />

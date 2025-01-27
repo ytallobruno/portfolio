@@ -1,28 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import { Moon, Sun } from 'lucide-react';
+import React, { useEffect, useState } from "react";
+import { Moon, Sun } from "lucide-react";
 
 const ThemeToggle = () => {
   const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
     setDarkMode(isDarkMode);
-    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+    document.documentElement.setAttribute(
+      "data-theme",
+      isDarkMode ? "dark" : "light"
+    );
   }, []);
 
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
-    localStorage.setItem('darkMode', newDarkMode.toString());
-    document.documentElement.setAttribute('data-theme', newDarkMode ? 'dark' : 'light');
+    localStorage.setItem("darkMode", newDarkMode.toString());
+    document.documentElement.setAttribute(
+      "data-theme",
+      newDarkMode ? "dark" : "light"
+    );
   };
 
   return (
     <button
       onClick={toggleDarkMode}
-      className="p-2 rounded-full bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark hover:text-teal-300 transition-colors duration-300"
+      className="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark rounded-full p-2 transition-colors duration-300 hover:text-blue-600"
     >
-      {darkMode ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
+      {darkMode ? <Sun className="h-6 w-6" /> : <Moon className="h-6 w-6" />}
     </button>
   );
 };

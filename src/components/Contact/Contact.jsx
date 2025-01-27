@@ -23,7 +23,7 @@ export default function Contact() {
       id="contact"
       className="bg-gradient-to-b from-slate-800 to-black py-20"
     >
-      <h2 className="mb-10 text-center text-4xl font-bold text-teal-300">
+      <h2 className="mb-10 text-center text-4xl font-bold text-blue-300">
         Contact Me
       </h2>
       <motion.form
@@ -34,7 +34,7 @@ export default function Contact() {
         transition={{ duration: 0.5 }}
       >
         <div className="mb-4">
-          <label htmlFor="name" className="mb-2 block text-teal-300">
+          <label htmlFor="name" className="mb-2 block text-blue-300">
             Name
           </label>
           <input
@@ -48,7 +48,7 @@ export default function Contact() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="mb-2 block text-teal-300">
+          <label htmlFor="email" className="mb-2 block text-blue-300">
             Email
           </label>
           <input
@@ -62,7 +62,7 @@ export default function Contact() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="message" className="mb-2 block text-teal-300">
+          <label htmlFor="message" className="mb-2 block text-blue-300">
             Message
           </label>
           <textarea
@@ -77,7 +77,7 @@ export default function Contact() {
         </div>
         <button
           type="submit"
-          className="w-full rounded bg-teal-500 py-2 px-4 text-white transition duration-300 hover:bg-teal-600"
+          className="w-full rounded bg-blue-500 py-2 px-4 text-white transition duration-300 hover:bg-blue-600"
         >
           Send Message
         </button>

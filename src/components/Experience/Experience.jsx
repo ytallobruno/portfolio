@@ -10,7 +10,7 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="h-max bg-[var(--bg-color)] bg-gradient-to-b"
+      className="h-max bg-[var(--bg-color)]"
     >
       <section className="pt-10 pb-10">
         <h2 className="mx-6 py-2 pb-8 text-center text-4xl font-bold text-[var(--text-color)]">

@@ -29,7 +29,7 @@ export default function NavLinks(props) {
             spy={true}
             smooth={true}
             duration={500}
-            className="cursor-pointer font-bold text-[var(--text-color)] transition-colors duration-300 hover:text-teal-300"
+            className="cursor-pointer font-bold text-[var(--text-color)] transition-colors duration-300 hover:text-blue-600"
             onClick={() => props.isMobile && props.closeMobileMenu()}
           >
             {link.text}

@@ -1,17 +1,22 @@
 .navBar {
-  background-color: var(--bg-color);
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
 }
 
 .navBar .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.4rem;
+  background-color: var(--transparency-color);
 }
 
 .navBar .mobileNavigation {
-  /*display: none;*/
+  display: none;
 }
 
 @media (max-width: 640px) {
@@ -45,5 +50,4 @@
   .navBar ul li:last-child {
     margin-bottom: 1.2rem;
   }
-
 }
