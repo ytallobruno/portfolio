@@ -19,10 +19,31 @@ const experienceData = [
       "Axios",
       "AWS",
       "Git",
-      "Kanban"
+      "Kanban",
     ],
   },
-
+  {
+    company: "PUC Minas - Pontifícia Universidade Católica de Minas Gerais",
+    position: "Tecnólogo Análise e Desenvolvimento de Sistemas",
+    startDate: "02/2024",
+    endDate: "atual",
+    description: [
+      "- Destaque no primeiro semestre de 2024 na turma 4 com o projeto 'Fila Fácil', para melhorar a experiência do cliente em shoppings, focado em estabelecimentos gastronômicos.",
+      "- Utilização de diversas tecnologias, com seus semestres sendo divididos em 'stacks'.",
+      "- Desenvolvimento de habilidades de comunicação, trabalho em equipe, liderança e resolução de problemas.",
+    ],
+    tech: [
+      "ASP.NET Core",
+      "C#",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Git",
+      "Kanban",
+      "React Native",
+    ],
+  },
   {
     company: "Calindra Tech",
     position: "Software Developer I",
