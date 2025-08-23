@@ -27,27 +27,4 @@
   .navBar .mobileNavigation {
     display: block;
   }
-
-  .navBar .mobileNavigation ul {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    position: absolute;
-    bottom: 100%;
-    width: 150px;
-    right: 0;
-  }
-
-  .navBar ul li {
-    padding: 0.4rem 1rem;
-    margin: 0.4rem 0;
-    text-align: right;
-    backdrop-filter: blur(10px);
-    background-color: var(--transparency-color);
-    border-radius: 10px 0 0 10px;
-  }
-
-  .navBar ul li:last-child {
-    margin-bottom: 1.2rem;
-  }
 }

@@ -10,18 +10,26 @@
 .App {
   height: 100%;
 }
+
+/* Padding para compensar header mobile fixo */
+@media (max-width: 640px) {
+  .App {
+    padding-top: 70px; /* Altura do header mobile */
+    padding-bottom: 80px; /* Altura da bottom navigation */
+  }
+}
 :root {
-  --bg-color: #080808;          /* Fundo principal - preto */
-  --bg-primary: #1e293b;        /* Fundo de cards primários */
-  --bg-secondary: #0f172a;      /* Fundo de botões/elementos interativos */
-  --bg-tertiary: #1e293b;       /* Fundo de cards secundários */
+  --bg-color: #080808; /* Fundo principal - preto */
+  --bg-primary: #1e293b; /* Fundo de cards primários */
+  --bg-secondary: #0f172a; /* Fundo de botões/elementos interativos */
+  --bg-tertiary: #1e293b; /* Fundo de cards secundários */
 
-  --text-color: #f8fafc;        /* Texto principal - quase branco */
+  --text-color: #f8fafc; /* Texto principal - quase branco */
   --text-secondary-color: #e2e8f0; /* Texto secundário */
-  --text-tertiary-color: #94a3b8;  /* Texto terciário/descrições */
+  --text-tertiary-color: #94a3b8; /* Texto terciário/descrições */
 
-  --primary-color: #3b82f6;     /* Azul principal */
-  --secondary-color: #60a5fa;   /* Azul mais claro para contrastes */
+  --primary-color: #3b82f6; /* Azul principal */
+  --secondary-color: #60a5fa; /* Azul mais claro para contrastes */
   --transparency-color: rgba(15, 23, 42, 0.7); /* Overlay com mais opacidade */
 
   --button-primary-color: #3b82f6;
@@ -30,22 +38,20 @@
   --button-secondary-hover: #c5c9d0;
   --button-text-default: #1e293b;
   --button-text-light: #f8fafc;
-
 }
 
-
 [data-theme="light"] {
-  --bg-color: #f0f2f5;          /* Fundo principal - branco azulado */
-  --bg-primary: #e5e7eb;        /* Fundo de cards primários */
-  --bg-secondary: #dbe2e8;      /* Fundo de botões/elementos interativos */
-  --bg-tertiary: #f1f5f9;       /* Fundo de cards secundários */
+  --bg-color: #f0f2f5; /* Fundo principal - branco azulado */
+  --bg-primary: #e5e7eb; /* Fundo de cards primários */
+  --bg-secondary: #dbe2e8; /* Fundo de botões/elementos interativos */
+  --bg-tertiary: #f1f5f9; /* Fundo de cards secundários */
 
-  --text-color: #0f172a;        /* Texto principal - azul escuro */
+  --text-color: #0f172a; /* Texto principal - azul escuro */
   --text-secondary-color: #1e293b; /* Texto secundário */
-  --text-tertiary-color: #334155;  /* Texto terciário/descrições */
+  --text-tertiary-color: #334155; /* Texto terciário/descrições */
 
-  --primary-color: #3b82f6;     /* Azul principal */
-  --secondary-color: #1d4ed8;   /* Azul mais escuro para contrastes */
+  --primary-color: #3b82f6; /* Azul principal */
+  --secondary-color: #1d4ed8; /* Azul mais escuro para contrastes */
   --transparency-color: rgba(241, 245, 249, 0.8); /* Overlay mais suave */
 }
 
