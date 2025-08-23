@@ -34,11 +34,11 @@ export default function ExperienceCard(props) {
         ))}
       </ul>
 
-      <div className="flex flex-wrap gap-2 mt-2">
+      <div className="mt-2 flex flex-wrap gap-2">
         {tech.map((item, index) => (
           <span
             key={index}
-            className="inline-block rounded-full border border-[var(--transparency-color)] bg-[var(--primary-color)] px-3 py-1 text-center text-blue-50"
+            className="inline-block cursor-pointer rounded-full border border-[var(--transparency-color)] bg-[var(--primary-color)] px-3 py-1 text-center text-blue-50 transition-colors duration-200 hover:bg-[var(--button-primary-hover)]"
             title={item}
           >
             {item}
