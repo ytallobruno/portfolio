@@ -48,7 +48,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className="group relative rounded-full p-2 transition-all duration-300 hover:scale-110 hover:bg-[var(--transparency-color)] "
+      className="group relative rounded-full p-2 transition-all duration-300 hover:scale-110 hover:bg-[var(--transparency-color)]"
       aria-label={`Mudar para tema ${darkMode ? "claro" : "escuro"}`}
       title={`Mudar para tema ${darkMode ? "claro" : "escuro"}`}
     >
@@ -56,12 +56,12 @@ const ThemeToggle = () => {
         <Sun
           className={`absolute h-6 w-6 transition-all duration-300 ${
             darkMode ? "rotate-90 scale-0" : "rotate-0 scale-100"
-          } text-[var(--text-color)] group-hover:text-blue-500`}
+          } text-[var(--text-color)] group-hover:text-primary-500`}
         />
         <Moon
           className={`absolute h-6 w-6 transition-all duration-300 ${
             darkMode ? "rotate-0 scale-100" : "-rotate-90 scale-0"
-          } text-[var(--text-color)] group-hover:text-blue-500`}
+          } text-[var(--text-color)] group-hover:text-primary-500`}
         />
       </div>
     </button>

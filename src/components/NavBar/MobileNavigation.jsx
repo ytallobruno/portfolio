@@ -69,7 +69,7 @@ export default function MobileNavigation() {
         <div className="flex items-center justify-center px-4 py-3">
           <button
             onClick={toggleMenu}
-            className="rounded-full bg-[var(--transparency-color)] p-3 text-[var(--text-color)] shadow-sm transition-all duration-200 hover:bg-[var(--transparency-color)] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            className="rounded-full bg-gradient-to-r from-primary-500 to-secondary-500 p-3 text-white shadow-lg transition-all duration-200 hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
             aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={isOpen}
           >

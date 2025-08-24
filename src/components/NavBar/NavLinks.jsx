@@ -22,31 +22,59 @@ export default function NavLinks({
     // { to: "contact", text: "Contato" },
   ];
 
-  // Detectar seção ativa via scroll spy
   useEffect(() => {
-    const handleSetActive = (to) => {
-      setActiveSection(to);
-    };
-
-    // Se não há prop de seção ativa, usar detecção automática
     if (!propActiveSection) {
+      const handleScroll = () => {
+        const sections = links
+          .map(({ to }) => document.getElementById(to))
+          .filter(Boolean);
+        const scrollPosition = window.scrollY + window.innerHeight * 0.3;
+
+        let currentSection = sections[0]?.id || "about";
+
+        for (const section of sections) {
+          if (section.offsetTop <= scrollPosition) {
+            currentSection = section.id;
+          }
+        }
+
+        setActiveSection(currentSection);
+      };
+
       const observer = new IntersectionObserver(
         (entries) => {
+          let maxEntry = null;
+          let maxRatio = 0;
+
           entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setActiveSection(entry.target.id);
+            if (entry.isIntersecting && entry.intersectionRatio > maxRatio) {
+              maxRatio = entry.intersectionRatio;
+              maxEntry = entry;
             }
           });
+
+          if (maxEntry) {
+            setActiveSection(maxEntry.target.id);
+          }
         },
-        { threshold: 0.6, rootMargin: "-20% 0px -70% 0px" }
+        {
+          threshold: [0, 0.1, 0.25, 0.5, 0.75, 1],
+          rootMargin: "-80px 0px -50% 0px",
+        }
       );
+
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
 
       links.forEach(({ to }) => {
         const element = document.getElementById(to);
         if (element) observer.observe(element);
       });
 
-      return () => observer.disconnect();
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+        observer.disconnect();
+      };
     }
   }, [propActiveSection, links]);
 
@@ -85,8 +113,8 @@ export default function NavLinks({
                 ${!isMobile ? "relative" : ""}
                 ${
                   isActive
-                    ? "text-blue-600"
-                    : "text-[var(--text-color)] hover:text-blue-600"
+                    ? "text-primary-500"
+                    : "text-[var(--text-color)] hover:text-primary-500"
                 }
               `}
               onClick={() => handleClick(link.to)}
@@ -96,7 +124,7 @@ export default function NavLinks({
               {isActive && !isMobile && (
                 <motion.div
                   layoutId="activeIndicator"
-                  className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-600"
+                  className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full bg-gradient-to-r from-primary-500 to-secondary-500"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.2 }}

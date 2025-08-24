@@ -12,12 +12,16 @@ export default function ExperienceCard(props) {
       contentStyle={{
         background: "var(--bg-tertiary)",
         color: "var(--text-color)",
-        boxShadow: `0px -3px var(--secondary-color), 3px 5px 10px -3px rgba(0,0,0,0.2)`,
+        boxShadow: `0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)`,
+        border: "1px solid rgba(99, 102, 241, 0.2)",
+        borderRadius: "12px",
       }}
-      contentArrowStyle={{ borderRight: `10px solid var(--bg-tertiary)` }}
+      contentArrowStyle={{ borderRight: `10px solid transparent` }}
       iconStyle={{
-        background: "var(--bg-tertiary)",
-        color: "var(--secondary-color)",
+        background:
+          "linear-gradient(135deg, var(--primary-color), var(--secondary-color))",
+        color: "white",
+        boxShadow: "0 4px 6px -1px rgba(99, 102, 241, 0.5)",
       }}
       icon={<MdOutlineWorkOutline />}
       date={[startDate, " ~ ", endDate]}
@@ -34,11 +38,11 @@ export default function ExperienceCard(props) {
         ))}
       </ul>
 
-      <div className="mt-2 flex flex-wrap gap-2">
+      <div className="mt-4 flex flex-wrap gap-2">
         {tech.map((item, index) => (
           <span
             key={index}
-            className="inline-block cursor-pointer rounded-full border border-[var(--transparency-color)] bg-[var(--primary-color)] px-3 py-1 text-center text-blue-50 transition-colors duration-200 hover:bg-[var(--button-primary-hover)]"
+            className="inline-block cursor-default rounded-full bg-gradient-to-r from-primary-500 to-secondary-500 px-3 py-1 text-sm font-medium text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
             title={item}
           >
             {item}

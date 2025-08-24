@@ -19,40 +19,49 @@
   }
 }
 :root {
-  --bg-color: #080808; /* Fundo principal - preto */
-  --bg-primary: #1e293b; /* Fundo de cards primários */
-  --bg-secondary: #0f172a; /* Fundo de botões/elementos interativos */
-  --bg-tertiary: #1e293b; /* Fundo de cards secundários */
+  --bg-color: #0a0a0b; /* Fundo principal - preto mais suave */
+  --bg-primary: #1a1b23; /* Fundo de cards primários - mais sutil */
+  --bg-secondary: #2a2d3a; /* Fundo de botões/elementos interativos */
+  --bg-tertiary: #1e1f26; /* Fundo de cards secundários */
 
-  --text-color: #f8fafc; /* Texto principal - quase branco */
-  --text-secondary-color: #e2e8f0; /* Texto secundário */
-  --text-tertiary-color: #94a3b8; /* Texto terciário/descrições */
+  --text-color: #f1f3f4; /* Texto principal - branco mais suave */
+  --text-secondary-color: #d1d5db; /* Texto secundário */
+  --text-tertiary-color: #9ca3af; /* Texto terciário/descrições */
 
-  --primary-color: #3b82f6; /* Azul principal */
-  --secondary-color: #60a5fa; /* Azul mais claro para contrastes */
-  --transparency-color: rgba(15, 23, 42, 0.7); /* Overlay com mais opacidade */
+  --primary-color: #6366f1; /* Índigo moderno */
+  --secondary-color: #8b5cf6; /* Roxo complementar */
+  --accent-color: #10b981; /* Verde para destaques */
+  --transparency-color: rgba(26, 27, 35, 0.8); /* Overlay mais sofisticado */
 
-  --button-primary-color: #3b82f6;
-  --button-primary-hover: #1d4ed8;
-  --button-secondary: #e2e8f0;
-  --button-secondary-hover: #c5c9d0;
-  --button-text-default: #1e293b;
-  --button-text-light: #f8fafc;
+  --button-primary-color: #6366f1;
+  --button-primary-hover: #4f46e5;
+  --button-secondary: #374151;
+  --button-secondary-hover: #4b5563;
+  --button-text-default: #f1f3f4;
+  --button-text-light: #f1f3f4;
 }
 
 [data-theme="light"] {
-  --bg-color: #f0f2f5; /* Fundo principal - branco azulado */
-  --bg-primary: #e5e7eb; /* Fundo de cards primários */
-  --bg-secondary: #dbe2e8; /* Fundo de botões/elementos interativos */
-  --bg-tertiary: #f1f5f9; /* Fundo de cards secundários */
+  --bg-color: #fafbfc; /* Fundo principal - branco mais puro */
+  --bg-primary: #ffffff; /* Fundo de cards primários - branco puro */
+  --bg-secondary: #f3f4f6; /* Fundo de botões/elementos interativos */
+  --bg-tertiary: #f9fafb; /* Fundo de cards secundários */
 
-  --text-color: #0f172a; /* Texto principal - azul escuro */
-  --text-secondary-color: #1e293b; /* Texto secundário */
-  --text-tertiary-color: #334155; /* Texto terciário/descrições */
+  --text-color: #111827; /* Texto principal - preto mais suave */
+  --text-secondary-color: #374151; /* Texto secundário */
+  --text-tertiary-color: #6b7280; /* Texto terciário/descrições */
 
-  --primary-color: #3b82f6; /* Azul principal */
-  --secondary-color: #1d4ed8; /* Azul mais escuro para contrastes */
-  --transparency-color: rgba(241, 245, 249, 0.8); /* Overlay mais suave */
+  --primary-color: #6366f1; /* Índigo moderno */
+  --secondary-color: #8b5cf6; /* Roxo complementar */
+  --accent-color: #10b981; /* Verde para destaques */
+  --transparency-color: rgba(255, 255, 255, 0.9); /* Overlay mais limpo */
+
+  --button-primary-color: #6366f1;
+  --button-primary-hover: #4f46e5;
+  --button-secondary: #f3f4f6;
+  --button-secondary-hover: #e5e7eb;
+  --button-text-default: #111827;
+  --button-text-light: #ffffff;
 }
 
 body {

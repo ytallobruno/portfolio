@@ -18,7 +18,10 @@ export default function Projects() {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="flex flex-col overflow-hidden rounded-lg bg-[var(--bg-tertiary)] shadow-lg"
+            className="group flex flex-col overflow-hidden rounded-xl bg-[var(--bg-tertiary)] shadow-clean transition-all duration-300 hover:scale-105 hover:shadow-card-hover"
+            style={{
+              border: "1px solid rgba(99, 102, 241, 0.1)",
+            }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -27,8 +30,9 @@ export default function Projects() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="mx-auto h-48 w-full transform object-cover transition-transform duration-300 ease-in-out hover:scale-110"
+                className="mx-auto h-48 w-full transform object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
             </div>
             <div className="flex flex-grow flex-col p-6">
               <h3 className="mb-2 text-xl font-semibold text-[var(--text-color)]">

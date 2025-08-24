@@ -40,14 +40,15 @@ export default function Skills() {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="rounded-lg bg-[var(--bg-tertiary)] p-6"
+              className="group rounded-xl bg-[var(--bg-tertiary)] p-6 transition-all duration-300"
               style={{
-                boxShadow: `0px -3px var(--secondary-color), 3px 5px 10px -3px rgba(0,0,0,0.2)`,
+                boxShadow: `0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)`,
+                border: "1px solid rgba(99, 102, 241, 0.1)",
               }}
             >
               <div className="mb-4 flex items-center">
-                <div className="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--secondary-color)]">
-                  <div className="text-blue-100">
+                <div className="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 transition-all duration-300 group-hover:from-primary-600 group-hover:to-secondary-600 group-hover:shadow-lg">
+                  <div className="text-white transition-all duration-300">
                     {iconComponents[category.icon]}
                   </div>
                 </div>
@@ -55,12 +56,13 @@ export default function Skills() {
                   {category.name}
                 </h3>
               </div>
-              <ul className="list-inside list-disc">
+              <ul className="space-y-2">
                 {category.skills.map((skill, skillIndex) => (
                   <li
                     key={skillIndex}
-                    className="mb-1 text-sm text-[var(--text-color)] opacity-70"
+                    className="flex items-center text-sm text-[var(--text-secondary-color)]"
                   >
+                    <div className="bg-primary-400 mr-2 h-1.5 w-1.5 rounded-full"></div>
                     {skill}
                   </li>
                 ))}

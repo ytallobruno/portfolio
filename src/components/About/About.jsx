@@ -23,10 +23,7 @@ export default function About() {
   }, []);
 
   return (
-    <article
-      id="about"
-      className="h-max bg-[var(--bg-color)] max-sm:pt-6"
-    >
+    <article id="about" className="h-max bg-[var(--bg-color)] max-sm:pt-6">
       <motion.div
         className="flex min-h-screen flex-col items-center justify-center"
         initial={{ opacity: 0 }}
@@ -35,7 +32,7 @@ export default function About() {
       >
         <section className="mx-auto max-w-4xl px-4 text-center">
           <motion.h2
-            className="mb-2 text-5xl font-bold text-blue-600"
+            className="mb-2 text-5xl font-bold text-primary-500"
             initial={{ y: -20 }}
             animate={{ y: 0 }}
             transition={{ delay: 0.2 }}
@@ -85,7 +82,7 @@ export default function About() {
               href="https://twitter.com/ytallodev"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-colors duration-300 hover:text-blue-600"
+              className="transition-colors duration-300 hover:text-primary-500"
             >
               <AiFillTwitterCircle />
             </a>
@@ -93,7 +90,7 @@ export default function About() {
               href="https://www.linkedin.com/in/ytallobruno/"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-colors duration-300 hover:text-blue-600"
+              className="transition-colors duration-300 hover:text-primary-500"
             >
               <AiFillLinkedin />
             </a>
@@ -101,7 +98,7 @@ export default function About() {
               href="https://github.com/ytallobruno/"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-colors duration-300 hover:text-blue-600"
+              className="transition-colors duration-300 hover:text-primary-500"
             >
               <AiFillGithub />
             </a>
