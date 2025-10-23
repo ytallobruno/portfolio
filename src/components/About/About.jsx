@@ -23,7 +23,7 @@ export default function About() {
   }, []);
 
   return (
-    <article id="about" className="h-max bg-[var(--bg-color)] max-sm:pt-6">
+    <article id="about" className="h-max bg-[var(--bg-color)] max-sm:pt-6 pt-4 mt-2">
       <motion.div
         className="flex min-h-screen flex-col items-center justify-center"
         initial={{ opacity: 0 }}
