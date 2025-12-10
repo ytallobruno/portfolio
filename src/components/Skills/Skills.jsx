@@ -40,15 +40,13 @@ export default function Skills() {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="group rounded-xl bg-[var(--bg-tertiary)] p-6 transition-all duration-300"
-              style={{
-                boxShadow: `0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)`,
-                border: "1px solid rgba(16, 185, 129, 0.1)",
-              }}
+              className="group rounded-xl border border-neutral-300 bg-[var(--bg-tertiary)] p-6 shadow-md transition-all duration-300 hover:border-primary-400 dark:border-neutral-700 dark:shadow-gray-800/50 dark:hover:border-primary-900"
             >
               <div className="mb-4 flex items-center">
-                <div className="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 transition-all duration-300 group-hover:from-primary-600 group-hover:to-secondary-600 group-hover:shadow-lg">
-                  <div className="text-white transition-all duration-300">
+                <div className="relative mr-4 flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-primary-400 to-secondary-600">
+                  <div className="mouse-pointer absolute inset-0 rounded-full bg-gradient-to-br from-primary-600 to-secondary-400 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"></div>
+                  <div className="absolute inset-0 rounded-full opacity-0 shadow-lg transition-opacity duration-500 ease-in-out group-hover:opacity-100"></div>
+                  <div className="relative z-10 text-white">
                     {iconComponents[category.icon]}
                   </div>
                 </div>
@@ -62,7 +60,7 @@ export default function Skills() {
                     key={skillIndex}
                     className="flex items-center text-sm text-[var(--text-secondary-color)]"
                   >
-                    <div className="bg-primary-400 mr-2 h-1.5 w-1.5 rounded-full"></div>
+                    <div className="mr-2 h-1.5 w-1.5 rounded-full bg-primary-400"></div>
                     {skill}
                   </li>
                 ))}

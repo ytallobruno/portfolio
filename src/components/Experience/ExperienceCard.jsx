@@ -13,7 +13,10 @@ export default function ExperienceCard(props) {
         background: "var(--bg-tertiary)",
         color: "var(--text-color)",
         boxShadow: `0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)`,
-        border: "1px solid rgba(16, 185, 129, 0.2)",
+        borderWidth: "1px",
+        borderStyle: "solid",
+        borderColor:
+          "color-mix(in srgb, var(--primary-color) 20%, transparent)",
         borderRadius: "12px",
       }}
       contentArrowStyle={{ borderRight: `10px solid transparent` }}
@@ -21,7 +24,8 @@ export default function ExperienceCard(props) {
         background:
           "linear-gradient(135deg, var(--primary-color), var(--secondary-color))",
         color: "white",
-        boxShadow: "0 4px 6px -1px rgba(16, 185, 129, 0.5)",
+        boxShadow:
+          "0 4px 6px -1px color-mix(in srgb, var(--primary-color) 50%, transparent)",
       }}
       icon={<MdOutlineWorkOutline />}
       date={[startDate, " ~ ", endDate]}
@@ -42,7 +46,7 @@ export default function ExperienceCard(props) {
         {tech.map((item, index) => (
           <span
             key={index}
-            className="inline-block cursor-default rounded-full bg-gradient-to-r from-primary-500 to-secondary-500 px-3 py-1 text-sm font-medium text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
+            className="inline-block cursor-default rounded-full bg-gradient-to-r from-primary-400 to-secondary-600 px-3 py-1 text-sm font-medium text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
             title={item}
           >
             {item}

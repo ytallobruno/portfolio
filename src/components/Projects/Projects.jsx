@@ -20,7 +20,10 @@ export default function Projects() {
             key={index}
             className="group flex flex-col overflow-hidden rounded-xl bg-[var(--bg-tertiary)] shadow-clean transition-all duration-300 hover:scale-105 hover:shadow-card-hover"
             style={{
-              border: "1px solid rgba(16, 185, 129, 0.1)",
+              borderWidth: "1px",
+              borderStyle: "solid",
+              borderColor:
+                "color-mix(in srgb, var(--primary-color) 10%, transparent)",
             }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
