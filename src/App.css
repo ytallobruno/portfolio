@@ -28,13 +28,13 @@
   --text-secondary-color: #d1d5db; /* Texto secundário */
   --text-tertiary-color: #9ca3af; /* Texto terciário/descrições */
 
-  --primary-color: #6366f1; /* Índigo moderno */
-  --secondary-color: #8b5cf6; /* Roxo complementar */
+  --primary-color: #10b981; /* Verde esmeralda */
+  --secondary-color: #059669; /* Verde mais escuro */
   --accent-color: #10b981; /* Verde para destaques */
   --transparency-color: rgba(26, 27, 35, 0.8); /* Overlay mais sofisticado */
 
-  --button-primary-color: #6366f1;
-  --button-primary-hover: #4f46e5;
+  --button-primary-color: #10b981;
+  --button-primary-hover: #059669;
   --button-secondary: #374151;
   --button-secondary-hover: #4b5563;
   --button-text-default: #f1f3f4;
@@ -51,13 +51,13 @@
   --text-secondary-color: #374151; /* Texto secundário */
   --text-tertiary-color: #6b7280; /* Texto terciário/descrições */
 
-  --primary-color: #6366f1; /* Índigo moderno */
-  --secondary-color: #8b5cf6; /* Roxo complementar */
-  --accent-color: #10b981; /* Verde para destaques */
+  --primary-color: #10b981; /* Verde esmeralda */
+  --secondary-color: #059669; /* Verde mais escuro */
+  --accent-color: #34d399; /* Verde claro para destaques */
   --transparency-color: rgba(255, 255, 255, 0.9); /* Overlay mais limpo */
 
-  --button-primary-color: #6366f1;
-  --button-primary-hover: #4f46e5;
+  --button-primary-color: #10b981;
+  --button-primary-hover: #059669;
   --button-secondary: #f3f4f6;
   --button-secondary-hover: #e5e7eb;
   --button-text-default: #111827;

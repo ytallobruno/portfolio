@@ -13,7 +13,7 @@ export default function ExperienceCard(props) {
         background: "var(--bg-tertiary)",
         color: "var(--text-color)",
         boxShadow: `0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)`,
-        border: "1px solid rgba(99, 102, 241, 0.2)",
+        border: "1px solid rgba(16, 185, 129, 0.2)",
         borderRadius: "12px",
       }}
       contentArrowStyle={{ borderRight: `10px solid transparent` }}
@@ -21,7 +21,7 @@ export default function ExperienceCard(props) {
         background:
           "linear-gradient(135deg, var(--primary-color), var(--secondary-color))",
         color: "white",
-        boxShadow: "0 4px 6px -1px rgba(99, 102, 241, 0.5)",
+        boxShadow: "0 4px 6px -1px rgba(16, 185, 129, 0.5)",
       }}
       icon={<MdOutlineWorkOutline />}
       date={[startDate, " ~ ", endDate]}
